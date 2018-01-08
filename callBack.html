@@ -42,10 +42,21 @@
       },
           url: "https://api.fitbit.com/1/user/"+userId+"/activities/heart/date/today/1d.json",
           success:function(data, status, xhr){
-            console.log("data "+ JSON.stringify(data));
+            console.log("data 1 day"+ JSON.stringify(data));
           }
     });
 
+
+    $.ajax({
+      type: 'GET',
+      beforeSend: function(request) {
+         request.setRequestHeader("Authorization", 'Bearer ' + access_token);
+      },
+          url: "https://api.fitbit.com/1/user/"+userId+"/activities/heart/date/today/1w.json",
+          success:function(data, status, xhr){
+            console.log("data 1 week"+ JSON.stringify(data));
+          }
+    });
 
 //     $.ajax({
 //       type: 'GET',
