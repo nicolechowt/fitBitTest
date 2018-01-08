@@ -46,10 +46,10 @@
 //            console.log("data 1 week data activities-heart"+ JSON.stringify(data.activities-heart));
             var actHeartData = data["activities-heart"];
             var todaysActHeartData = actHeartData[6];
-            var restingHR = todaysActHeartData.value["rest"];
+            var restingHR = todaysActHeartData.value["restingHeartRate"];
             console.log("actHeartData"+ JSON.stringify(actHeartData));  
             console.log("todaysActHeartData"+ JSON.stringify(todaysActHeartData));  
-            console.log("restingHR"+ JSON.stringify(restingHeartRate));         
+            console.log("restingHR"+ JSON.stringify(restingHR));         
           }
     });
 
