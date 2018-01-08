@@ -44,6 +44,8 @@
           url: "https://api.fitbit.com/1/user/"+userId+"/activities/heart/date/2018-01-02/1w.json",
           success:function(data, status, xhr){
             console.log("data 1 week data activities-heart"+ JSON.stringify(data.activities-heart));
+            console.log("data 1 week data activities-heart"+ JSON.stringify(data["activities-heart"]));
+            console.log("data 1 week data activities-heart"+ JSON.stringify(data.activities-heart));            
           }
     });
 
